@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Global Data Capture</title>
+  <meta name="description" content="Global Data Capture — Engineering intelligent platforms for over two decades.">
+  <style>
+    :root{ --gold:#e6bd52; --text:#f2dba6; }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; min-height:100vh; display:grid; place-items:center;
+      color:var(--text);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
+      text-align:center;
+      background:#000 url('public/bg-mobile-flare.jpg') center/cover no-repeat fixed;
+    }
+    @media (min-width: 768px){
+      body{ background-image:url('public/bg-desktop-flare.jpg'); }
+    }
+    main{ padding:4vh 5vw; }
+    .brand{ width:min(86vw, 900px); margin:auto; }
+    @media (min-width: 768px){ .brand{ width:min(58vw, 980px);} }
+    h1{ margin:1rem 0 0; font-size: clamp(36px, 6vw, 96px); letter-spacing: .06em; line-height:1.02; font-weight:800; color:var(--gold);
+        text-shadow:0 2px 6px rgba(0,0,0,.45),0 12px 36px rgba(0,0,0,.7); }
+    .tag{ margin:.75rem 0 0; font-size: clamp(12px, 2vw, 18px); letter-spacing:.18em; color:#e7d2a1; opacity:.95; }
+    .visually-hidden{ position:absolute !important; height:1px; width:1px; overflow:hidden; clip:rect(1px,1px,1px,1px); white-space:nowrap; }
+  </style>
+</head>
+<body>
+  <main>
+    <picture class="brand" aria-hidden="true">
+      <source srcset="public/gdc_energycore_v2_desktop.png" media="(min-width:768px)">
+      <img src="public/gdc_energycore_v2_mobile.png" alt="Global Data Capture energy core logo" style="width:100%; height:auto;">
+    </picture>
+    <h1 class="visually-hidden">Global Data Capture</h1>
+    <p class="tag">ENGINEERING INTELLIGENT PLATFORMS<br>FOR OVER TWO DECADES</p>
+  </main>
+</body>
+</html>
