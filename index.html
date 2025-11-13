@@ -11,8 +11,8 @@
         content="Engineering intelligent platforms for over two decades." />
   <meta property="og:type" content="website" />
 
-  <!-- favicon lives in /public, served from root -->
-  <link rel="icon" href="/favicon.png" type="image/png" />
+  <!-- favicon also lives under /public in this static setup -->
+  <link rel="icon" href="/public/favicon.png" type="image/png" />
 
   <style>
     * { box-sizing: border-box; }
@@ -24,13 +24,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #000; /* solid black behind hero */
+      background: #000;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
     }
 
     main {
       width: 100%;
-      max-width: 1400px;   /* keeps desktop hero from getting TOO huge on big screens */
+      max-width: 1400px;
       padding: 0;
     }
 
@@ -49,11 +49,12 @@
 
 <body>
   <main>
-    <!-- Hero: desktop flare for >=768px, mobile flare otherwise -->
+    <!-- Desktop gets wide flare, mobile gets tall flare -->
     <picture class="hero">
-      <source srcset="/bg-desktop-flare.jpg" media="(min-width: 768px)">
-      <img src="/bg-mobile-flare.jpg"
-           alt="Global Data Capture Energy Core — Global Data Capture logo and horizon flare hero image">
+      <source srcset="/public/bg-desktop-flare.jpg" media="(min-width: 768px)">
+      <img
+        src="/public/bg-mobile-flare.jpg"
+        alt="Global Data Capture Energy Core hero image with logo and flare">
     </picture>
   </main>
 </body>
